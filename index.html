@@ -80,7 +80,7 @@
                 </li>
                 <li class="promo__form-item">
                   <label class="visually-hidden" for="number">Ваш номер телефона</label>
-                  <input type="tel" name="number" placeholder="Введите Ваш Номер телефона" id="number" required="">
+                  <input type="tel" name="number" placeholder="Введите Ваш Номер телефона" id="number" pattern="^(8|\+7)[0-9]+$" required="">
                 </li>
               </ul>
               <button class="promo__form-button" type="submit">Подобрать велосипед мечты</button>
@@ -167,16 +167,20 @@
       <iframe class="page-footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59910436516!2d30.32089461636648!3d59.93879418187623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1626981898423!5m2!1sru!2sru" allowfullscreen="" loading="lazy"></iframe>
       <ul class="page-footer__contacts" id="contacts">
         <li class="page-footer__contacts-item page-footer__contacts-item--email">
-          <svg class="page-footer__icon" width="26" height="20" aria-label="Адрес электронной почты">
-            <use xlink:href="#email-icon"></use>
-          </svg>
-          <a class="page-footer__link" href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
+          <a class="page-footer__link" href="mailto:puteshestviemechta@gmail.ru">
+            <svg class="page-footer__icon" width="26" height="20" aria-label="Адрес электронной почты">
+              <use xlink:href="#email-icon"></use>
+            </svg>
+            puteshestviemechta@gmail.ru
+          </a>
         </li>
         <li class="page-footer__contacts-item page-footer__contacts-item--phone">
-          <svg class="page-footer__icon" width="22" height="24" aria-label="Номер телефона">
-            <use xlink:href="#phone-icon"></use>
-          </svg>
-          <a class="page-footer__link" href="tel:+749978468446">+7 (499) -784-684-46</a>
+          <a class="page-footer__link" href="tel:+749978468446">
+            <svg class="page-footer__icon" width="22" height="24" aria-label="Номер телефона">
+              <use xlink:href="#phone-icon"></use>
+            </svg>
+            +7 (499) -784-684-46
+          </a>
         </li>
       </ul>
     </footer>
